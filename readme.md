@@ -40,4 +40,19 @@ ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
 ```
 
 
-`` 
+Para adicionar uma extensão, exemplo o jest no vscode: 
+
+#### Passo 1:
+pego o id `orta.vscode-jest`
+
+#### Passo 2:
+```json
+// Configure tool-specific properties.
+"customizations": {
+	"vscode": {
+		"extensions": [
+			"orta.vscode-jest"
+		]
+	}
+}
+``` 
