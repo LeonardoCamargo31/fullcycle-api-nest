@@ -1,9 +1,9 @@
 export type CategoryConstructorProps= {
-  categoryId: string
+  categoryId?: string
   name: string
-  description:string|null
-  isActive:boolean
-  createdAt: Date
+  description?:string|null
+  isActive?:boolean
+  createdAt?: Date
 }
 
 export type CategoryCreateCommand= {
@@ -31,7 +31,7 @@ export class Category {
     return new Category(props)
   }
 
-  changeName(name:string):void {
+  changeName (name:string):void {
     this.name=name
   }
 
